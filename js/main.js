@@ -47,7 +47,7 @@ function todoList() {
     }
 
     function eliminarTarea(tarea) {
-        if (confirm('¿Eliminar tarea' + tarea.querySelector('.tarea__nombre').textContent + '?')) {
+        if (confirm(`¿Eliminar tarea: ${tarea.querySelector('.tarea__nombre').textContent} ?`)) {
             tareas.removeChild(tarea);
         }
         guardarTareas();
